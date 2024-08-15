@@ -153,4 +153,167 @@ while booleano:
                         "precio": 10000,
                         "estado":pagar
             }
+    if queDesea=="2":
+        print("")
+        print("QUE VA A ORDENAR DE LA SECCION DE PLATO FUERTE")
+        mostrarMenu=abrirMenu()
+        contador=0
+        for i in mostrarMenu:
+            if i["categoria"]=="plato_fuerte":
+                contador=contador+1
+                print(contador)
+                print("|",i["categoria"])
+                print("|NOMBRE :",i["nombre"])
+                print("|PRECIO :",i["precio"])
+                print("-------------------")
+        print("")
+        entrada="entrada"
+        pedidoGuardar=abrirPedidos()
+        queVaApedir=input("QUE DESEA PEDIR?: ")
+        print("-Juan Perez")
+        print("-Maria Lopez")
+        print("-Carlos Gomez")
+        print("-Ana Martinez")
+        print("-Andres Gomez")
+        queCliente=input("QUE CLIENTE ERES: ")
+        print("va a pagar ya? ")
+        espera=input("si/no: ")
+        if espera=="si":
+            pagar="pagado"
+        if espera=="no":
+            pagar="sin pagar"
+        
+        if queVaApedir=="1":
+            pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"plato_fuerte",
+                        "nombre":"Pasta Bolognesa",
+                        "precio": 35000,
+                        "estado":pagar
+            }
+            pedidoos.append(pedidoAñadido)
+            GuardaditoPedidos(pedidoos)
+
+        if queVaApedir=="2":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"plato_fuerte",
+                        "nombre":"Hamburguesa",
+                        "precio": 28000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)
+        if queVaApedir=="3":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"plato_fuerte",
+                        "nombre":"Pollo al Curry",
+                        "precio": 30000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)     
+        if queVaApedir=="4":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"plato_fuerte",
+                        "nombre":"Lechona",
+                        "precio": 25000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)
+        if queVaApedir=="5":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"plato_fuerte",
+                        "nombre":"Arroz al Wok",
+                        "precio": 20000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)
+
+
+    if queDesea=="3":
+        print("")
+        print("QUE VA A ORDENAR DE LA SECCION DE BEBIDAS")
+        mostrarMenu=abrirMenu()
+        contador=0
+        for i in mostrarMenu:
+            if i["categoria"]=="bebida":
+                contador=contador+1
+                print(contador)
+                print("|",i["categoria"])
+                print("|NOMBRE :",i["nombre"])
+                print("|PRECIO :",i["precio"])
+                print("-------------------")
+        print("")
+        entrada="entrada"
+        pedidoGuardar=abrirPedidos()
+        queVaApedir=input("QUE DESEA PEDIR?: ")
+        print("-Juan Perez")
+        print("-Maria Lopez")
+        print("-Carlos Gomez")
+        print("-Ana Martinez")
+        print("-Andres Gomez")
+        queCliente=input("QUE CLIENTE ERES: ")
+        print("va a pagar ya? ")
+        espera=input("si/no: ")
+        if espera=="si":
+            pagar="pagado"
+        if espera=="no":
+            pagar="sin pagar"
+        
+        if queVaApedir=="1":
+            pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"bebida",
+                        "nombre":"Coca-Cola",
+                        "precio": 3000,
+                        "estado":pagar
+            }
+            pedidoos.append(pedidoAñadido)
+            GuardaditoPedidos(pedidoos)
+
+        if queVaApedir=="2":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"bebida",
+                        "nombre":"Jugo Natural",
+                        "precio": 5000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)
+        if queVaApedir=="3":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"bebida",
+                        "nombre":"Vino",
+                        "precio": 8000,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)     
+        if queVaApedir=="4":
+             pedidoAñadido={
+                "cliente":queCliente,
+                "items:"
+                        "categoria":"bebida",
+                        "nombre":"Cerveza",
+                        "precio": 3500,
+                        "estado":pagar
+            }
+             pedidoos.append(pedidoAñadido)
+             GuardaditoPedidos(pedidoos)
              
